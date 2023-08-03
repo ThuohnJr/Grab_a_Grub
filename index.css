@@ -1,0 +1,702 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,200;0,300;0,400;1,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,300;0,400;0,500;1,200;1,300;1,400;1,500&display=swap');
+.container{
+font-weight:200;
+overflow: auto;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+p{
+padding:15px;
+
+}
+a{
+list-style: none;
+text-decoration: none;
+}/*intro*/
+.logo{
+display: grid;
+grid-template-columns: repeat(3,1fr);
+grid-template-rows:1fr;
+justify-content: space-around;
+align-items: center;
+}
+.logo1{
+grid-column:2/3;
+
+}  
+#logo{
+width:100%;
+height:100%;
+}
+/*navigation*/
+
+.nav-bar {
+display:flex;
+justify-content:center;
+width:100%;
+padding: 10px;
+margin: 10px;
+}
+
+.products, .services,.news{
+position: relative;
+display:inline-block;
+}
+.product-list,.service-list,.news-list{
+ display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1; 
+}
+
+.product-list a,.service-list a,.news-list a{
+ color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  }
+
+.product-list a:hover{
+background-color:olivedrab;
+}
+.products:hover .product-list{
+display: block;
+float: left;
+}
+
+
+a{
+list-style: none;
+}
+.service-list a:hover{
+background-color: olivedrab;
+
+}
+.services:hover .service-list{
+display:block
+}
+.news-list a:hover{
+background-color: olivedrab;
+}
+.news:hover .news-list{
+display: block;
+}
+.nav-link{
+list-style: none;
+text-decoration: none;
+text-align: start;
+}
+.navbar{
+display: flex;
+flex-direction: row;
+padding: 10px;
+text-align: center;
+background-color:darkolivegreen;
+column-gap: 3px;
+
+}
+.home,.products,.services,.news,.about{
+
+}
+/*Products page*/
+.introduction{
+    text-align: center;
+    font-size: 1.4em;
+}
+.product-1{
+display: grid;
+grid-template-columns: repeat(5,1fr);
+grid-template-rows:1fr;
+justify-content: center;
+grid-gap:5px;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.product1{
+
+grid-column: 2/3;
+display:flex;
+flex-direction: column;
+border: 1px #000000 groove;
+text-align: center;
+font-size: 1.5em;
+}
+.product2{
+grid-column: 3/4;
+display:flex;
+flex-direction: column;
+border: 1px #000000 groove;
+text-align: center;
+font-size: 1.5em;
+}
+.product3{
+grid-column:4/5;
+display:flex;
+flex-direction: column;
+border: 1px #000000 groove;
+text-align: center;
+font-size: 1.5em;
+}
+
+img{
+width:100%;
+height:200px;
+}
+.product-2{
+display: grid;
+grid-template-columns: repeat(5,1fr);
+grid-template-rows: 1fr;
+grid-gap: 5px;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.product4{
+grid-column:2/3;
+display:flex;
+flex-direction: column;
+border: 1px #000000 groove;
+text-align: center;
+font-size: 1.5em;
+}
+.product5{
+grid-column:3/4;
+display:flex;
+flex-direction: column;
+border: 1px #000000 groove;
+text-align: center;
+font-size: 1.5em;
+
+}
+.product6{
+grid-column:4/5;
+display:flex;
+flex-direction: column;
+border: 1px #000000 groove;
+text-align: center;
+font-size: 1.5em;
+}
+.product-3{
+display: grid;
+grid-template-columns: repeat(5,1fr);
+grid-template-rows: 1fr;
+grid-gap: 5px;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.product7{
+grid-column:2/3;
+display:flex;
+flex-direction: column;
+border: 1px #000000 groove;
+text-align: center;
+font-size: 1.5em;
+}
+.product8{
+grid-column:3/4;
+display:flex;
+flex-direction: column;
+border: 1px #000000 groove;
+text-align: center;
+font-size: 1.5em;
+}
+.product9{
+grid-column:4/5;
+display:flex;
+flex-direction: column;
+border: 1px #000000 groove;
+text-align: center;
+font-size: 1.5em;
+}
+@media only screen and (max-width:360px) {
+#roach,#cricket,#bsfs,#weevil,#earth,#meal,#silkworm,#hopper,#bee{
+width:100%;
+height:100%;
+}
+.product-1, .product-2,.product-3{
+display:flex;
+flex-direction: column;
+row-gap: 3px;
+padding: 5px;
+margin: 5px;
+}
+.product1,.product2,.product3,.product4,.product5,.product6{
+    padding: 5px;
+    margin: 5px;
+}
+.product7,.product8,.product9{
+     padding: 5px;
+    margin: 5px;
+}
+
+.silk-products{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    margin: 5px;
+}
+
+}
+
+.btn {
+  align-items: center;
+  background-color: #FFE7E7;
+  background-position: 0 0;
+  border: 1px solid #FEE0E0;
+  border-radius: 11px;
+  box-sizing: border-box;
+  color: #D33A2C;
+  cursor: pointer;
+  display: flex;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 33.4929px;
+  list-style: outside url(https://www.smashingmagazine.com/images/bullet.svg) none;
+  padding: 2px 12px;
+  text-align: left;
+  text-decoration: none;
+  text-shadow: none;
+  text-underline-offset: 1px;
+  transition: border .2s ease-in-out,box-shadow .2s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  word-break: break-word;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn:active,
+.btn:hover,
+.btn:focus {
+  outline: 0;
+}
+
+
+.btn:active {
+  background-color: #D33A2C;
+  box-shadow: rgba(0, 0, 0, 0.12) 0 1px 3px 0 inset;
+  color: #FFFFFF;
+}
+
+.btn:hover {
+  background-color: #FFE3E3;
+  border-color: #FAA4A4;
+}
+
+.btn:active:hover,
+.btn:focus:hover,
+.btn:focus {
+  background-color: #D33A2C;
+  box-shadow: rgba(0, 0, 0, 0.12) 0 1px 3px 0 inset;
+  color: #FFFFFF;
+}
+}
+
+.intra{
+text-align:center;
+padding:0p 20px 0px 20px;
+}
+.intra h1{
+    text-align: center;
+}
+/*Silk page*/
+
+.silk-products{
+display:flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+text-align: center;
+gap: 20px;
+padding: 30px; 
+margin: 20px;
+
+}
+
+.bombyx,.eri{
+border: 1px groove #001000;
+
+}
+
+#bombyx,#eri{
+width:100%;
+}
+.nutri-table{
+    font-size: 1.5em;
+    padding: 20px;
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.table-silk{
+    justify-content: center; 
+    align-items: center;
+    width: 100%;
+    font-size: 1.2em;
+    border-collapse: collapse;
+} 
+.silk-table-head{
+    padding: 20px;
+    margin: 20px;
+    background-color: olivedrab;
+    text-align: center;
+
+}
+td,th{
+    border: 1px #000000 groove;
+    text-align: center;
+    padding: 10px;
+}
+@media(max-width:360px){
+    .silk-products{
+        display: flex;
+        flex-direction: column;
+        padding: 3px;
+        margin: 3px;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    
+} 
+
+/*Cockroach page*/
+
+.intro-title{
+    font-size: 1.5em;
+   text-align: center;
+}
+.intro-text{
+    font-size: 1.3em;
+}
+#american,#german,#giant{
+width:100%;
+
+}
+.american,.german,.giant{
+    border: #000000 1px groove;
+}
+
+.roach-products{
+display: flex;
+flex-direction: row;
+padding: 30px;
+margin: 30px;
+gap: 20px;
+justify-content: center;
+align-items: center;
+}
+.table{
+    display: flex;
+    flex-direction: row;
+
+
+   }
+.table1{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: 5px;
+    margin: 5px;
+   }   
+.table-roach{
+    width: 100%;
+    font-size: 1.4em;
+    padding: 20px; 
+ border-collapse: collapse; 
+}
+tr,th{
+    border: 1px #000000 groove;
+    padding: 10px;
+    text-align: center;
+}
+.roach-table-head{
+    padding: 40px;
+    background-color: #AE5B22;
+}
+#nutri{
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+@media(max-width:360px){
+    .roach-products{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        padding: 3px;
+        margin: 3px; 
+    }
+    .table1{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+    }
+    .table-roach{
+        width: 100%;
+    }
+}
+/*American cockroach*/
+.table-container{
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.table-title{
+    background-color: gold;
+    padding: 10px;
+    text-align: center;
+}
+/*Soldierfly page*/
+.bsf-intro{
+text-align: center;
+}
+
+.bsf-products,.bsf-products1,.bsf-products2{
+display: flex;
+flex-direction:row;
+padding: 30px;
+margin: 30px;
+gap: 20px;
+width: 100;
+justify-content: center;
+}
+.eggs,.larva,.pupa,.adults,.grounded,.oils,.frass,.treated-larvae{
+
+border: #000000 groove 1px;
+}
+#bsf-img{
+    width: 100%;
+}
+.nutri-table{
+    width: 100%;
+}
+.table-bsf{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+border-collapse: collapse;
+}
+th,tr{
+ border: 1px #000000 groove;
+    padding: 10px;
+    text-align: center;
+}
+.bsf-table-head{
+padding: 20px;
+margin: 20px;
+background-color: grey;
+}
+@media(max-width:360px) {
+.bsf-products,.bsf-products1,.bsf-products2{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    margin: 5px;
+}
+ 
+
+}
+/*cricket page*/
+.crick-intro{
+text-align: center;
+}
+.cricket-species{
+display:flex;
+flex-direction: row;
+padding: 40px;
+margin: 30px;
+gap: 50px;
+align-items: center;
+}
+.house,.camel,.spotted,.spider{
+border: 1px #000000 groove;
+
+}
+#cricket-img{
+    width: 100%;
+
+}
+.title{
+    font-size: 1.4em;
+    font-family: cinzel,fira-sans,sans-serif;
+    padding-bottom:10px ;
+    margin-bottom: 10px;
+    text-align: center;
+}
+@media(max-width:360px){
+    .cricket-species{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        padding: 3px;
+        margin: 3px;
+    }
+}
+
+
+/*mealworm page*/
+.mealworm-products{
+display: flex;
+flex-direction: row;
+gap: 20px;
+justify-content: center;
+align-items: center;
+}
+.mealworm-larvae,.mealworm-adult{
+border: #000000 groove 1px;
+text-align: center;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-size: 1.3em;
+font-weight: 400;
+}
+@media(max-width:360px){
+    .mealworm-products{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 3px;
+        margin: 3px;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+/*weevil page*/
+.weevil-products{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+}
+.weevil,.weevil1,.weevil2{
+    border: 1px #000000 groove;
+}
+@media(max-width:360px){
+    .weevil-products{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 3px;
+        margin: 3px;
+    }
+}
+/*products page*/
+.products-intro{
+text-align: center;
+font-size:1.5em;
+font-family: Arial, Helvetica, sans-serif;
+font-weight: 400;
+}
+
+
+
+/*about us*/
+.about-us{
+text-align: center;
+font-size: 1.5em;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+font-weight: 400;
+color:darkblue;
+}
+.quote{
+text-align:center;
+font-weight:600;
+font-size:1.3em;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+color:rgb(6, 178, 201);
+}
+
+
+/*Training page*/
+.training-top{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.training-top1{
+    width: 50%;
+    align-items: center;
+    text-align: center;
+}
+.training-top2{
+    width: 50%;
+    align-items: center;
+}
+#training-img{
+    width:100%;
+}
+/*Services*/
+.services-1,.services-2,.services-3{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin: 20px;
+}
+#services-img{
+    width: 100%;
+    min-width: 40vw;
+    height: 350px;
+    }
+
+@media(max-width:360px){
+  .services-1,.services-2,.services-3{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    padding: 9px;
+    margin: 9px;
+}
+.fumigation,.training,.consultation,.loan,.sponsorship{
+    border-bottom: 1px #ddd groove;
+
+}
+#services-img{
+    width: 100%;
+}
+  
+}
+/*footer*/
+
+.footer{
+padding:7px;
+background-color:darkolivegreen;
+text-align:center;
+font-size:1.3em;
+}
+.footer-links{
+display:flex;
+flex-direction:row;
+justify-content:space-around;
+}
+.footer-links a{
+color:#001000;
+
+}
+.table{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly; 
+}
+
