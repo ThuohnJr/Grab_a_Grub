@@ -12,6 +12,9 @@ overflow: auto;
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
+html{
+    scroll-behavior: smooth;
+}
 p{
 padding:15px;
 
@@ -30,7 +33,7 @@ align-items: center;
 .logo1{
 grid-column:2/3;
 
-}  
+}
 #logo{
 width:100%;
 height:100%;
@@ -55,7 +58,7 @@ display:inline-block;
   background-color: #f1f1f1;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1; 
+  z-index: 1;
 }
 
 .product-list a,.service-list a,.news-list a{
@@ -106,6 +109,10 @@ column-gap: 3px;
 }
 .home,.products,.services,.news,.about{
 
+}
+.promo > img{
+width: 10%;
+    height: 20%;
 }
 /*Products page*/
 .introduction{
@@ -316,7 +323,7 @@ align-items: center;
 justify-content: center;
 text-align: center;
 gap: 20px;
-padding: 30px; 
+padding: 30px;
 margin: 20px;
 
 }
@@ -337,12 +344,12 @@ width:100%;
     align-items: center;
 }
 .table-silk{
-    justify-content: center; 
+    justify-content: center;
     align-items: center;
     width: 100%;
     font-size: 1.2em;
     border-collapse: collapse;
-} 
+}
 .silk-table-head{
     padding: 20px;
     margin: 20px;
@@ -365,8 +372,8 @@ td,th{
         align-items: center;
         justify-content: center;
     }
-    
-} 
+
+}
 
 /*Cockroach page*/
 
@@ -394,6 +401,10 @@ gap: 20px;
 justify-content: center;
 align-items: center;
 }
+.roach-products-cost{
+    text-align: center;
+    font-size: 1.3em;
+}
 .table{
     display: flex;
     flex-direction: row;
@@ -406,12 +417,12 @@ align-items: center;
     gap: 10px;
     padding: 5px;
     margin: 5px;
-   }   
+   }
 .table-roach{
     width: 100%;
     font-size: 1.4em;
-    padding: 20px; 
- border-collapse: collapse; 
+    padding: 20px;
+ border-collapse: collapse;
 }
 tr,th{
     border: 1px #000000 groove;
@@ -434,7 +445,7 @@ tr,th{
         width: 100%;
         align-items: center;
         padding: 3px;
-        margin: 3px; 
+        margin: 3px;
     }
     .table1{
         display: flex;
@@ -506,7 +517,7 @@ background-color: grey;
     padding: 5px;
     margin: 5px;
 }
- 
+
 
 }
 /*cricket page*/
@@ -651,10 +662,11 @@ color:rgb(6, 178, 201);
     justify-content: center;
     padding: 20px;
     margin: 20px;
+    scroll-behavior: smooth;
 }
 #services-img{
     width: 100%;
-    min-width: 40vw;
+   border-radius:20px ;
     height: 350px;
     }
 
@@ -675,15 +687,28 @@ color:rgb(6, 178, 201);
 #services-img{
     width: 100%;
 }
-  
+
 }
 /*footer*/
-
 .footer{
-padding:7px;
+  display: flex;
+  flex-direction: column;
+}
+.footer-1{
+padding:20px;
 background-color:darkolivegreen;
 text-align:center;
 font-size:1.3em;
+position: static;
+display: flex;
+flex-direction: column;
+}
+.footer-1 > a{
+  list-style: none;
+  text-decoration: none;
+    display: flex;
+
+   
 }
 .footer-links{
 display:flex;
@@ -697,6 +722,35 @@ color:#001000;
 .table{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly; 
+    justify-content: space-evenly;
+}
+.footer-titles{
+    text-align: center;
+}
+.sponsor-section{
+    display: flex;
+    flex:1;
+    height: 400px;
+    width: 100%;
+    background-color: #1a2421;
+    color:white;
+    justify-content: space-between;
 }
 
+a[href="facebook"]{
+    background-image: url("/themes/custom/rainbird_theme/images/social/facebook.png");
+  background-repeat: no-repeat;
+  height: 36px;
+  width: 36px;
+  margin: 0;
+}
+.footer-list{
+    display: flex;
+   justify-content: flex-start;
+    list-style: none;
+    text-decoration: none;
+    color:white;
+}
+.copyright{
+text-align: center;
+}
