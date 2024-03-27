@@ -2,6 +2,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,200;0,300;0,400;1,300;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,300;0,400;0,500;1,200;1,300;1,400;1,500&display=swap');
+.eb-garamond-topright h1 {
+  font-family: "EB Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 400 to 900
+
+.cinzel-<uniquifier> {
+  font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
 .container{
 font-weight:200;
 
@@ -690,9 +705,28 @@ color:rgb(6, 178, 201);
 
 }
 /*Sign-Up*/
+
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 400 to 800
+
+.eb-garamond-topright h1 {
+  font-family: "EB Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 400 to 900
+
+.cinzel-label {
+  font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
 .views{
   display: flex;
-  height:100vh;
+  height:100%;
   padding:20px 0;
 }
 #logo-img{
@@ -733,7 +767,10 @@ height:30%;
   color:wheat;
   margin:0;
   padding:0;
-
+  font-family: "EB Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
 }
 .topright h1{
   text-align: center;
@@ -741,13 +778,14 @@ height:30%;
   background-image: url('pics/prince-abid-TWbkojYMhAg-unsplash.jpg');
   background-size:cover;
   height: 100%;
+  font-family:
 }
 .midright{
 display: flex;
   background-color: olive;
   color: #fff;
   height:40%;
-
+justify-content: center;
 
 
 }
@@ -755,27 +793,29 @@ form{
   display: flex;
   flex-direction: column;
   padding:10px;
-  justify-content: space-around;
+  width: 100%;
+  justify-content: space-between;
+
 }
 .bottomright{
   height: 30%;
-  background-color: ;
+
 }
 .name{
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   gap:10px;
   padding: 10px;
 }
 .mailntele{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   gap:10px;
   padding: 10px;
 }
 .passwords{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   gap:10px;
   padding: 10px;
 }
@@ -793,12 +833,28 @@ form{
 }
 label{
   padding:5px;
+  font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 input{
   padding:10px;
   background:wheat;
+  border:2px #E5E7EB groove;
+}
+input:focus{
+  border:lightblue 4px groove;
+  box-shadow: 1px 1px 1px 1px lightblue;
 
 }
+input:valid{
+  border-color: green;
+}
+input:invalid{
+  border-color: red;
+}
+
 /*training-info-index*/
 .training-info{
   display: flex;
@@ -839,7 +895,7 @@ margin:20px;
   display: flex;
   flex-direction: column;
 }
-.footer-1{
+footer{
 padding:20px;
 background-color:darkolivegreen;
 text-align:center;
@@ -848,7 +904,7 @@ position: static;
 display: flex;
 flex-direction: column;
 }
-.footer-1 > a{
+footer > a{
   list-style: none;
   text-decoration: none;
     display: flex;
@@ -872,7 +928,7 @@ color:#001000;
 .footer-titles{
     text-align: center;
 }
-.sponsor-section{
+.sponsor-div{
     display: flex;
     flex:1;
     height: 400px;
@@ -898,4 +954,19 @@ a[href="facebook"]{
 }
 .copyright{
 text-align: center;
+color: wheat;
+}
+footer{
+  position: relative;
+  margin-top: 10px;
+}
+footer ul{
+  display: flex;
+  justify-content: space-around;
+  padding:10px;
+list-style: none;
+}
+footer ul img{
+  height:20px;
+  width:20px;
 }
