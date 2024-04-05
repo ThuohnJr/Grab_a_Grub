@@ -29,6 +29,7 @@ font-weight:200;
 }
 html{
     scroll-behavior: smooth;
+    width:100%;
 }
 p{
 padding:15px;
@@ -37,7 +38,12 @@ padding:15px;
 a{
 list-style: none;
 text-decoration: none;
-}/*intro*/
+}
+h1{
+  text-align: center;
+}
+
+/*intro*/
 .logo{
 display: grid;
 grid-template-columns: repeat(3,1fr);
@@ -122,9 +128,7 @@ background-color:darkolivegreen;
 column-gap: 3px;
 
 }
-.home,.products,.services,.news,.about{
 
-}
 .promo > img{
 width: 10%;
     height: 20%;
@@ -134,128 +138,45 @@ width: 10%;
     text-align: center;
     font-size: 1.4em;
 }
-.product-1{
-display: grid;
-grid-template-columns: repeat(5,1fr);
-grid-template-rows:1fr;
+.products-list{
+display: flex;
+gap:2em;
+padding:20px;
+margin:30px;
 justify-content: center;
-grid-gap:5px;
+align-items: center;
 font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-
-.product1{
-
-grid-column: 2/3;
-display:flex;
-flex-direction: column;
-border: 1px #000000 groove;
-text-align: center;
-font-size: 1.5em;
+.products-list div{
+  border:1px #001000 groove;
 }
-.product2{
-grid-column: 3/4;
-display:flex;
-flex-direction: column;
-border: 1px #000000 groove;
-text-align: center;
-font-size: 1.5em;
+.products-promo-img{
+  background-image: url('pics/New folder/brett-jordan-9EOdQMQesfw-unsplash.jpg');
+  background-size: cover;
+  width: 100%;
+  height:700px;
+  color:#FFFFFF;
+  font-size: 2.5rem;
+  opacity:0.8;
 }
-.product3{
-grid-column:4/5;
-display:flex;
-flex-direction: column;
-border: 1px #000000 groove;
-text-align: center;
-font-size: 1.5em;
-}
-
-img{
+#product-img{
 width:100%;
-height:200px;
+height:300px;
 }
-.product-2{
-display: grid;
-grid-template-columns: repeat(5,1fr);
-grid-template-rows: 1fr;
-grid-gap: 5px;
-font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-.product4{
-grid-column:2/3;
-display:flex;
-flex-direction: column;
-border: 1px #000000 groove;
-text-align: center;
-font-size: 1.5em;
-}
-.product5{
-grid-column:3/4;
-display:flex;
-flex-direction: column;
-border: 1px #000000 groove;
-text-align: center;
-font-size: 1.5em;
 
-}
-.product6{
-grid-column:4/5;
-display:flex;
-flex-direction: column;
-border: 1px #000000 groove;
-text-align: center;
-font-size: 1.5em;
-}
-.product-3{
-display: grid;
-grid-template-columns: repeat(5,1fr);
-grid-template-rows: 1fr;
-grid-gap: 5px;
-font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-.product7{
-grid-column:2/3;
-display:flex;
-flex-direction: column;
-border: 1px #000000 groove;
-text-align: center;
-font-size: 1.5em;
-}
-.product8{
-grid-column:3/4;
-display:flex;
-flex-direction: column;
-border: 1px #000000 groove;
-text-align: center;
-font-size: 1.5em;
-}
-.product9{
-grid-column:4/5;
-display:flex;
-flex-direction: column;
-border: 1px #000000 groove;
-text-align: center;
-font-size: 1.5em;
-}
 @media only screen and (max-width:360px) {
-#roach,#cricket,#bsfs,#weevil,#earth,#meal,#silkworm,#hopper,#bee{
+#product-img{
 width:100%;
 height:100%;
 }
-.product-1, .product-2,.product-3{
+.products-list{
 display:flex;
 flex-direction: column;
 row-gap: 3px;
 padding: 5px;
 margin: 5px;
 }
-.product1,.product2,.product3,.product4,.product5,.product6{
-    padding: 5px;
-    margin: 5px;
-}
-.product7,.product8,.product9{
-     padding: 5px;
-    margin: 5px;
-}
+
 
 .silk-products{
     display: flex;
@@ -337,19 +258,19 @@ flex-direction: row;
 align-items: center;
 justify-content: center;
 text-align: center;
-gap: 20px;
+gap: 2em;
 padding: 30px;
 margin: 20px;
 
 }
-
-.bombyx,.eri{
-border: 1px groove #001000;
-
+.silk-products div{
+  border:1px #001000 groove;
 }
 
-#bombyx,#eri{
+
+#silk-img{
 width:100%;
+height: 300px;
 }
 .nutri-table{
     font-size: 1.5em;
@@ -399,11 +320,11 @@ td,th{
 .intro-text{
     font-size: 1.3em;
 }
-#american,#german,#giant{
+#roach-img{
 width:100%;
-
+height:300px;
 }
-.american,.german,.giant{
+.roach-products div{
     border: #000000 1px groove;
 }
 
@@ -490,7 +411,7 @@ tr,th{
 text-align: center;
 }
 
-.bsf-products,.bsf-products1,.bsf-products2{
+.bsf-products{
 display: flex;
 flex-direction:row;
 padding: 30px;
@@ -499,12 +420,12 @@ gap: 20px;
 width: 100;
 justify-content: center;
 }
-.eggs,.larva,.pupa,.adults,.grounded,.oils,.frass,.treated-larvae{
-
+.bsf-products div{
 border: #000000 groove 1px;
 }
 #bsf-img{
     width: 100%;
+    height: 350px;
 }
 .nutri-table{
     width: 100%;
@@ -526,7 +447,7 @@ margin: 20px;
 background-color: grey;
 }
 @media(max-width:360px) {
-.bsf-products,.bsf-products1,.bsf-products2{
+.bsf-products{
     display: flex;
     flex-direction: column;
     padding: 5px;
@@ -547,20 +468,20 @@ margin: 30px;
 gap: 50px;
 align-items: center;
 }
-.house,.camel,.spotted,.spider{
+.cricket-species div{
 border: 1px #000000 groove;
-
 }
 #cricket-img{
     width: 100%;
+    height: 250px;
 
 }
 .title{
-    font-size: 1.4em;
+    font-size: 1.4rem;
     font-family: cinzel,fira-sans,sans-serif;
-    padding-bottom:10px ;
-    margin-bottom: 10px;
     text-align: center;
+    padding: 10px;
+
 }
 @media(max-width:360px){
     .cricket-species{
@@ -575,6 +496,11 @@ border: 1px #000000 groove;
 
 
 /*mealworm page*/
+.intro p{
+  font-size: 1.4rem;
+  text-align: center;
+  text-indent: inherit;
+}
 .mealworm-products{
 display: flex;
 flex-direction: row;
@@ -582,12 +508,16 @@ gap: 20px;
 justify-content: center;
 align-items: center;
 }
-.mealworm-larvae,.mealworm-adult{
+.mealworm-products div{
 border: #000000 groove 1px;
 text-align: center;
 font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 font-size: 1.3em;
 font-weight: 400;
+}
+#mealworm-img{
+width: 100%;
+height:300px;
 }
 @media(max-width:360px){
     .mealworm-products{
@@ -608,8 +538,12 @@ font-weight: 400;
     gap: 20px;
     justify-content: center;
 }
-.weevil,.weevil1,.weevil2{
+.weevil-products div{
     border: 1px #000000 groove;
+}
+#weevil-img{
+  width: 100%;
+  height: 300px;
 }
 @media(max-width:360px){
     .weevil-products{
@@ -620,12 +554,29 @@ font-weight: 400;
         margin: 3px;
     }
 }
+/*bee products*/
+.bee-products{
+  display: flex;
+  justify-content: center;
+  gap:30px;
+  padding:10px;
+
+}
+.bee-products div{
+  border:1px groove #001000;
+}
 /*products page*/
 .products-intro{
 text-align: center;
 font-size:1.5em;
 font-family: Arial, Helvetica, sans-serif;
 font-weight: 400;
+}
+.tag{
+  justify-content: center;
+  text-align: center;
+  background: coral;
+  font-size: 1.3rem;
 }
 
 
@@ -637,6 +588,27 @@ font-size: 1.5em;
 font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 font-weight: 400;
 color:darkblue;
+}
+.mission h2{
+  text-align: center;
+  font-size: 1.3rem;
+  font-family: Cinzel,arial,sans-serif;
+}
+.mission p{
+    color:orange;
+    text-align: center;
+    font-size: 2rem;
+
+}
+.vision h2{
+  text-align: center;
+  font-size: 1.3rem;
+  font-family: Cinzel,arial,sans-serif;
+}
+.vision p{
+  color: orange;
+text-align: center;
+    font-size: 2rem;
 }
 .quote{
 text-align:center;
@@ -703,6 +675,17 @@ color:rgb(6, 178, 201);
     width: 100%;
 }
 
+}
+/*Contact-info*/
+.contact-info div{
+  display: flex;
+  font-size:2rem;
+  align-items: center;
+
+}
+.contact-info div img{
+  width:40px;
+  height:40px;
 }
 /*Sign-Up*/
 
